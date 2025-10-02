@@ -36,18 +36,13 @@ public enum GameConfig {
     public static let hitFrameTime: TimeInterval    = 1.0 / 14.0
     public static let deathFrameTime: TimeInterval  = 1.0 / 8.0
     
-    // Frame counts (generic defaults)
-    // We keep idleFrames = enemyIdleFrames for backward compatibility,
-    // but introduce per-kind overrides for mismatched sheets.
     public static let enemyIdleFrames = 8
-    public static let playerIdleFrames = 4   // <-- your player sheet has 4 frames
+    public static let playerIdleFrames = 4
     public static let idleFrames = enemyIdleFrames
     
     public static let runFrames = 8
     public static let jumpFrames = 2
     public static let fallFrames = 2
-//    public static let attackFrames = 6
-//    public static let hitFrames = 4
     public static let playerTakeHitFrames = 3
     public static let enemyTakeHitFrames  = 4
     public static let playerAttack1Frames = 4

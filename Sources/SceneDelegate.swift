@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  TestAutomationPilot
-//
-//  Created by Rodney Zhang on 2025-09-30.
-//
-
 import UIKit
 import SpriteKit
 
