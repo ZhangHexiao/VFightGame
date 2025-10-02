@@ -1,0 +1,23 @@
+input_dir: .
+output_dir: Sources/Generated
+
+strings:
+  inputs:
+    - Resources/Localization
+  outputs:
+    - templateName: structured-swift5
+      output: Strings+Generated.swift
+
+colors:
+  inputs:
+    - Resources/Colors.txt
+  outputs:
+    - templateName: swift5
+      output: Colors+Generated.swift
+
+xcassets:
+  inputs:
+    - Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: Assets+Generated.swift

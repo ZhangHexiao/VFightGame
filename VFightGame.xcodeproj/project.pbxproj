@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30595039585931CDB9D5FAA9 /* CombatSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBD364D8F33341FC15F7CE /* CombatSystem.swift */; };
+		41EDCC9594138C6A1E85D743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F89E303E8BE7453547DED7 /* AppDelegate.swift */; };
+		6451DA5B783D9A84E0100E61 /* AnimationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4801C8B69CC5DA2736C5CA /* AnimationSystem.swift */; };
+		7D23B6C4ECAC5A5FFDE7363A /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF03968B053263D37350F6 /* GameConfig.swift */; };
+		814B04F59FA355D54D99A94C /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D8FB0B0468DED256AD52B /* EnemyNode.swift */; };
+		854A18E122D56282953C3BA0 /* PhysicsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91E482ADF6D2E726FC1AD8E /* PhysicsSystem.swift */; };
+		8AFDAEF3B0C759306CFF6F7C /* HUDLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024FB7C99E712ECF5E15C10 /* HUDLayer.swift */; };
+		94DA950561600098389FF1E4 /* InputSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F55C1ACA1B0B3A28792F9D /* InputSystem.swift */; };
+		A2DF4BB9B3920B9BEDB6CCF7 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882261A52C1C4065FF0C705 /* PlayerNode.swift */; };
+		BE743CCD2E8C456800F91C73 /* FighterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE743CCC2E8C456000F91C73 /* FighterEntity.swift */; };
+		BE743CCF2E8C5EAB00F91C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE743CCE2E8C5E9F00F91C73 /* SceneDelegate.swift */; };
+		BE743CD52E8C911000F91C73 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE743CD42E8C910700F91C73 /* BackgroundLayer.swift */; };
+		BE743CD72E8C98F500F91C73 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = BE743CD62E8C957800F91C73 /* Assets.xcassets */; };
+		BE743CDA2E8CD75000F91C73 /* SpriteSheetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE743CD92E8CD74C00F91C73 /* SpriteSheetLoader.swift */; };
+		BE8337682E8E060A004D3A2F /* DebugToggleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8337672E8E05FE004D3A2F /* DebugToggleOverlay.swift */; };
+		BE83376A2E8E1980004D3A2F /* EnemyAiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8337692E8E1977004D3A2F /* EnemyAiController.swift */; };
+		D67BB247C38D84095C436D3A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A5FDBA8E7BF5BEAF84C03 /* GameViewController.swift */; };
+		D84B37D177CBC333CAB88A63 /* ControlsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABD8E3AB9E2A2D788B9B016 /* ControlsLayer.swift */; };
+		F23BCD6EB4E0A459BD091820 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797D939FDCD9FC82D01A94F /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CECA40D513AD2E4798A3F65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6260B1E02063EBAC010464C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9992DFB8BF7BC81648778151;
+			remoteInfo = TestAutomationPilot;
+		};
+		A241FFC6A4F050086EDAB669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6260B1E02063EBAC010464C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9992DFB8BF7BC81648778151;
+			remoteInfo = TestAutomationPilot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ACABCFDBA941BA852C631D4 /* VFightGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VFightGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2094DFBAF961FE4613016178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3C4801C8B69CC5DA2736C5CA /* AnimationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSystem.swift; sourceTree = "<group>"; };
+		4EEF03968B053263D37350F6 /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		57F89E303E8BE7453547DED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		888D8FB0B0468DED256AD52B /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		A91E482ADF6D2E726FC1AD8E /* PhysicsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsSystem.swift; sourceTree = "<group>"; };
+		B024FB7C99E712ECF5E15C10 /* HUDLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDLayer.swift; sourceTree = "<group>"; };
+		B3F55C1ACA1B0B3A28792F9D /* InputSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSystem.swift; sourceTree = "<group>"; };
+		B54A5FDBA8E7BF5BEAF84C03 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BABD8E3AB9E2A2D788B9B016 /* ControlsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsLayer.swift; sourceTree = "<group>"; };
+		BE743CCC2E8C456000F91C73 /* FighterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterEntity.swift; sourceTree = "<group>"; };
+		BE743CCE2E8C5E9F00F91C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE743CD22E8C639900F91C73 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE743CD42E8C910700F91C73 /* BackgroundLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
+		BE743CD62E8C957800F91C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE743CD92E8CD74C00F91C73 /* SpriteSheetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheetLoader.swift; sourceTree = "<group>"; };
+		BE8337672E8E05FE004D3A2F /* DebugToggleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugToggleOverlay.swift; sourceTree = "<group>"; };
+		BE8337692E8E1977004D3A2F /* EnemyAiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyAiController.swift; sourceTree = "<group>"; };
+		C09E380E780DB294819C0175 /* VFightGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFightGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CBD364D8F33341FC15F7CE /* CombatSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatSystem.swift; sourceTree = "<group>"; };
+		E797D939FDCD9FC82D01A94F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E882261A52C1C4065FF0C705 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		EFB7E771A15D7945E38CD223 /* VFightGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFightGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		008219569202CFCB9A4B8B41 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		01354B11C8CC72521538C8E7 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UITests;
+			path = Tests/UITests;
+			sourceTree = "<group>";
+		};
+		21D71D49C6896F249E170297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ACABCFDBA941BA852C631D4 /* VFightGame.app */,
+				C09E380E780DB294819C0175 /* VFightGameTests.xctest */,
+				EFB7E771A15D7945E38CD223 /* VFightGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DBEBB405D8C051C79555F0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE743CCC2E8C456000F91C73 /* FighterEntity.swift */,
+				888D8FB0B0468DED256AD52B /* EnemyNode.swift */,
+				E882261A52C1C4065FF0C705 /* PlayerNode.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		35ACF29A634D4B7E71D163EF /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				BE8337692E8E1977004D3A2F /* EnemyAiController.swift */,
+				3C4801C8B69CC5DA2736C5CA /* AnimationSystem.swift */,
+				E6CBD364D8F33341FC15F7CE /* CombatSystem.swift */,
+				B3F55C1ACA1B0B3A28792F9D /* InputSystem.swift */,
+				A91E482ADF6D2E726FC1AD8E /* PhysicsSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		4EBFC93A5BBDA9634EB26658 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE8337672E8E05FE004D3A2F /* DebugToggleOverlay.swift */,
+				BABD8E3AB9E2A2D788B9B016 /* ControlsLayer.swift */,
+				B024FB7C99E712ECF5E15C10 /* HUDLayer.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6018C488A37B25D7C6FF812B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BE743CD82E8CD74000F91C73 /* Animation */,
+				BE743CD32E8C8F4A00F91C73 /* Background */,
+				BE743CCE2E8C5E9F00F91C73 /* SceneDelegate.swift */,
+				57F89E303E8BE7453547DED7 /* AppDelegate.swift */,
+				4EEF03968B053263D37350F6 /* GameConfig.swift */,
+				E797D939FDCD9FC82D01A94F /* GameScene.swift */,
+				B54A5FDBA8E7BF5BEAF84C03 /* GameViewController.swift */,
+				27DBEBB405D8C051C79555F0 /* Entities */,
+				35ACF29A634D4B7E71D163EF /* Systems */,
+				4EBFC93A5BBDA9634EB26658 /* UI */,
+				BE743CD22E8C639900F91C73 /* LaunchScreen.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7B65879283839A8BC2FDA0B6 = {
+			isa = PBXGroup;
+			children = (
+				BE743CD62E8C957800F91C73 /* Assets.xcassets */,
+				2094DFBAF961FE4613016178 /* Info.plist */,
+				6018C488A37B25D7C6FF812B /* Sources */,
+				008219569202CFCB9A4B8B41 /* Tests */,
+				01354B11C8CC72521538C8E7 /* UITests */,
+				21D71D49C6896F249E170297 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE743CD32E8C8F4A00F91C73 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				BE743CD42E8C910700F91C73 /* BackgroundLayer.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		BE743CD82E8CD74000F91C73 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BE743CD92E8CD74C00F91C73 /* SpriteSheetLoader.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37410F49692D2B2BEE41D3DE /* VFightGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCFFB1A9A597395AC0C3FFC /* Build configuration list for PBXNativeTarget "VFightGameTests" */;
+			buildPhases = (
+				B9E05ED5DF80CDF4E18B1598 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CE526421AB5EA3784A5D6DB /* PBXTargetDependency */,
+			);
+			name = VFightGameTests;
+			packageProductDependencies = (
+			);
+			productName = TestAutomationPilotTests;
+			productReference = C09E380E780DB294819C0175 /* VFightGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9992DFB8BF7BC81648778151 /* VFightGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9BEA19BAB7A355F3B3ED2E /* Build configuration list for PBXNativeTarget "VFightGame" */;
+			buildPhases = (
+				AA4968D095DFE4C20EA63E46 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VFightGame;
+			packageProductDependencies = (
+			);
+			productName = TestAutomationPilot;
+			productReference = 0ACABCFDBA941BA852C631D4 /* VFightGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B245DEA9703040762D75446A /* VFightGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365BB684DF19E6A4CA05CD64 /* Build configuration list for PBXNativeTarget "VFightGameUITests" */;
+			buildPhases = (
+				1E23820678D23B2DC661EFB8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C59D6F7AFE66D312A8BA7578 /* PBXTargetDependency */,
+			);
+			name = VFightGameUITests;
+			packageProductDependencies = (
+			);
+			productName = TestAutomationPilotUITests;
+			productReference = EFB7E771A15D7945E38CD223 /* VFightGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6260B1E02063EBAC010464C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					B245DEA9703040762D75446A = {
+						TestTargetID = 9992DFB8BF7BC81648778151;
+					};
+				};
+			};
+			buildConfigurationList = C2FB90995C536C5F518554A0 /* Build configuration list for PBXProject "VFightGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7B65879283839A8BC2FDA0B6;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9992DFB8BF7BC81648778151 /* VFightGame */,
+				37410F49692D2B2BEE41D3DE /* VFightGameTests */,
+				B245DEA9703040762D75446A /* VFightGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E23820678D23B2DC661EFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4968D095DFE4C20EA63E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE743CD72E8C98F500F91C73 /* Assets.xcassets in Sources */,
+				BE83376A2E8E1980004D3A2F /* EnemyAiController.swift in Sources */,
+				6451DA5B783D9A84E0100E61 /* AnimationSystem.swift in Sources */,
+				41EDCC9594138C6A1E85D743 /* AppDelegate.swift in Sources */,
+				30595039585931CDB9D5FAA9 /* CombatSystem.swift in Sources */,
+				D84B37D177CBC333CAB88A63 /* ControlsLayer.swift in Sources */,
+				814B04F59FA355D54D99A94C /* EnemyNode.swift in Sources */,
+				7D23B6C4ECAC5A5FFDE7363A /* GameConfig.swift in Sources */,
+				F23BCD6EB4E0A459BD091820 /* GameScene.swift in Sources */,
+				BE743CCF2E8C5EAB00F91C73 /* SceneDelegate.swift in Sources */,
+				D67BB247C38D84095C436D3A /* GameViewController.swift in Sources */,
+				BE8337682E8E060A004D3A2F /* DebugToggleOverlay.swift in Sources */,
+				BE743CCD2E8C456800F91C73 /* FighterEntity.swift in Sources */,
+				8AFDAEF3B0C759306CFF6F7C /* HUDLayer.swift in Sources */,
+				94DA950561600098389FF1E4 /* InputSystem.swift in Sources */,
+				BE743CDA2E8CD75000F91C73 /* SpriteSheetLoader.swift in Sources */,
+				BE743CD52E8C911000F91C73 /* BackgroundLayer.swift in Sources */,
+				854A18E122D56282953C3BA0 /* PhysicsSystem.swift in Sources */,
+				A2DF4BB9B3920B9BEDB6CCF7 /* PlayerNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E05ED5DF80CDF4E18B1598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CE526421AB5EA3784A5D6DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9992DFB8BF7BC81648778151 /* VFightGame */;
+			targetProxy = A241FFC6A4F050086EDAB669 /* PBXContainerItemProxy */;
+		};
+		C59D6F7AFE66D312A8BA7578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9992DFB8BF7BC81648778151 /* VFightGame */;
+			targetProxy = 3CECA40D513AD2E4798A3F65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AABA0CFED617EAD56386CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		412044C088C3D7FAE31C38E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGameTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VFightGame.app/VFightGame";
+			};
+			name = Debug;
+		};
+		4D11217D966A015EA208423D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FAF4ECB2352EB6B1C86556E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = VK2NHBP7M8;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGame;
+				SDKROOT = iphoneos;
+				SUPPORTED_INTERFACE_ORIENTATIONS = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				SUPPORTED_INTERFACE_ORIENTATIONS_IPAD = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		567351309BEADD98764364AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = VK2NHBP7M8;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGame;
+				SDKROOT = iphoneos;
+				SUPPORTED_INTERFACE_ORIENTATIONS = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				SUPPORTED_INTERFACE_ORIENTATIONS_IPAD = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		756814C524D2168970E8815B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGameUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestAutomationPilot;
+			};
+			name = Debug;
+		};
+		7B3ACF2BA3333D6A765A202C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGameTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VFightGame.app/VFightGame";
+			};
+			name = Release;
+		};
+		7B62B86090DF619F6EA64096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestAutomationPilot;
+				PRODUCT_NAME = VFightGameUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestAutomationPilot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365BB684DF19E6A4CA05CD64 /* Build configuration list for PBXNativeTarget "VFightGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756814C524D2168970E8815B /* Debug */,
+				7B62B86090DF619F6EA64096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B9BEA19BAB7A355F3B3ED2E /* Build configuration list for PBXNativeTarget "VFightGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAF4ECB2352EB6B1C86556E /* Debug */,
+				567351309BEADD98764364AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2FB90995C536C5F518554A0 /* Build configuration list for PBXProject "VFightGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D11217D966A015EA208423D /* Debug */,
+				3AABA0CFED617EAD56386CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DFCFFB1A9A597395AC0C3FFC /* Build configuration list for PBXNativeTarget "VFightGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412044C088C3D7FAE31C38E8 /* Debug */,
+				7B3ACF2BA3333D6A765A202C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6260B1E02063EBAC010464C /* Project object */;
+}

@@ -1,0 +1,9 @@
+/* Round Status Messages */
+"round.player_wins" = "Player Wins!";
+"round.enemy_wins" = "Enemy Wins!";
+"round.time_expired" = "Time's Up!";
+"round.draw" = "Draw!";
+
+/* UI Labels */
+"hud.health" = "Health";
+"hud.timer" = "Timer";

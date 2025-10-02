@@ -1,0 +1,46 @@
+name: TestAutomationPilot
+options:
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  TestAutomationPilot:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Info.plist
+        optional: false
+    resources:
+      - Assets.xcassets
+      - Resources
+    preBuildScripts:
+      - name: SwiftGen Code Generation
+        script: |
+          if command -v swiftgen >/dev/null 2>&1; then
+            swiftgen config run
+          else
+            echo "warning: SwiftGen not installed. Install with: brew install swiftgen"
+          fi
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.TestAutomationPilot
+      INFOPLIST_FILE: Info.plist
+      SUPPORTED_INTERFACE_ORIENTATIONS: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+      SUPPORTED_INTERFACE_ORIENTATIONS_IPAD: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+  TestAutomationPilotTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/GameLogicTests.swift
+    settings:
+      INFOPLIST_FILE: Info.plist
+    dependencies:
+      - target: TestAutomationPilot
+  TestAutomationPilotUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - Tests/UITests/ControlsUITests.swift
+    settings:
+      INFOPLIST_FILE: Info.plist
+    dependencies:
+      - target: TestAutomationPilot

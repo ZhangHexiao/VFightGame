@@ -1,0 +1,16 @@
+# Color definitions for SwiftGen
+# Format: color_name = #RRGGBB or #RRGGBBAA
+
+# Player colors
+player_red = #FF0000
+player_blue = #0000FF
+
+# UI colors
+button_background = #FFFFFF4D
+hud_background = #000000CC
+health_bar_full = #00FF00
+health_bar_critical = #FF0000
+
+# Game colors
+floor_color = #888888
+background_black = #000000
